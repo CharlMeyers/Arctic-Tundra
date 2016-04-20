@@ -30,6 +30,7 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.3.5/js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <title>Metrorail Western Cape</title>
     </head>
     <body>
@@ -37,50 +38,63 @@
             <nav class="navbar navbar navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navContent">
+                        <button type="button" class="navbar-toggle" data-slide="true">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span> 
                         </button>
                         <img src="img/Metrorail.png" type="image/png" class="image image-responsive navbar-brand" />                        
-                    </div>
-                    <div class="collapse navbar-collapse" id="navContent">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Newsfeed</a></li>
-                            <li><a href="connections.php">Connections</a></li>                                      
-                        </ul>                
-                    </div>
+                    </div>                    
                 </div>
             </nav>  
         </div>
         <div id="body">
-            <div id="twitter-feed">                
-                <img src="img/twitter.png" id="twitter" class="col-xs-2">
-                <div class="col-xs-10">
-                    <p id="heading">Metrorail W/Cape @CapeTownTrains  1h1 hour ago</p>
-                    <p id="message">09:25 #TrainReport #NorthernLine T2515 the 10:15 train from Bellville to Kraaifontein has been cancelled due to a faulty train set.<p>
-                </div>                
-                <div class="clearfix"></div>
+            <div id="homescreen">
+                <div id="twitter-feed">                
+                    <img src="img/twitter.png" id="twitter" class="col-xs-2">
+                    <div class="col-xs-10">
+                        <p id="heading">Metrorail W/Cape @CapeTownTrains  1h1 hour ago</p>
+                        <p id="message">09:25 #TrainReport #NorthernLine T2515 the 10:15 train from Bellville to Kraaifontein has been cancelled due to a faulty train set.<p>
+                    </div>                
+                    <div class="clearfix"></div>
+                </div>            
+                <div id="mainGrid">
+                    <div id="topLeft" class="col-xs-6">
+                        <img class="gridicon img-responsive" src="img/calendar.png">
+                        <h3 class="gridDescr">time tables</h3>                    
+                    </div>
+                    <div id="topRight" class="col-xs-6">
+                        <img class="gridicon img-responsive" src="img/public-transport-subway.png">
+                        <h3 class="gridDescr">find station</h3>
+                    </div>
+                    <div id="bottomLeft" class="col-xs-6">
+                        <img class="gridicon img-responsive" src="img/magnifier.png">
+                        <h3 class="gridDescr">route map</h3>
+                    </div>
+                    <div id="bottomRight" class="col-xs-6">
+                        <img class="gridicon img-responsive" src="img/price-ticket.png">
+                        <h3 class="gridDescr">ticket prices</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </div> 
             </div>            
-            <div id="mainGrid">
-                <div id="topLeft" class="col-xs-6">
-                    <img class="gridicon img-responsive" src="img/calendar.png">
-                    <h3 class="gridDescr">time tables</h3>                    
-                </div>
-                <div id="topRight" class="col-xs-6">
-                    <img class="gridicon img-responsive" src="img/public-transport-subway.png">
-                    <h3 class="gridDescr">find station</h3>
-                </div>
-                <div id="bottomLeft" class="col-xs-6">
-                    <img class="gridicon img-responsive" src="img/magnifier.png">
-                    <h3 class="gridDescr">route map</h3>
-                </div>
-                <div id="bottomRight" class="col-xs-6">
-                    <img class="gridicon img-responsive" src="img/price-ticket.png">
-                    <h3 class="gridDescr">ticket prices</h3>
-                </div>
+        </div>
+        <div id="sidescreen">
+            <div class="option">
+                <h3 class="col-xs-8">share app</h3>
+                <img src="img/share.png" class="img-responsive col-xs-4">
                 <div class="clearfix"></div>
-            </div>            
+            </div>
+            <div class="option">
+                <h3 class="col-xs-8">about</h3>
+                <img src="img/info-button.png" class="img-responsive col-xs-4">
+                <div class="clearfix"></div>
+            </div>
+            <div class="option">
+                <h3 class="col-xs-8" style="margin-top: 15px">contact us</h3>
+                <img src="img/business-card-of-a-man-with-contact-info.png" class="img-responsive col-xs-4">
+                <div class="clearfix"></div>
+            </div>
         </div>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

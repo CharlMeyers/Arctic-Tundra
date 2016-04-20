@@ -1,6 +1,6 @@
 /*Main styling*/
 body {
-    background-color: transparent;
+    background-color: #fcc92c;
     color: white;
     font-family: 'Century Gothic';
     /*height: 100%*/
@@ -8,19 +8,29 @@ body {
 
 #body {
     padding-top: 60px;
+    background-color: #373834;
+    height: 100vh;
+    position: relative;
+    box-shadow: 10px 0px 40px #404040;
 }
 
 html {
-    background-color: #373834;
+    /*background-color: #373834;*/
     /*height: 100%;*/
 }
 
 .icon-bar {
     background-color: #373834;
+    height: 4px !important;
+    width: 24px !important;
 }
 
 .navbar {
     background-color: white;
+    height: 60px;
+}
+
+.navbar-brand {
     height: 60px;
 }
 
@@ -77,11 +87,30 @@ html {
     margin-bottom: 30px;
 }
 
-.navbar-brand {
-    height: 60px;
+#sidescreen {
+    /*background-color: #fcc92c;*/
+    color: #373834;
+    z-index: -1;
+    top: 60px;
+    position: absolute;
+    text-align: right;
 }
 
-.icon-bar {
-    height: 4px !important;
-    width: 24px !important;
+.option {
+    padding-left: 42vw;    
+    width: 100vw;
+    border-bottom: solid #373834 1px;
 }
+
+.option img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#homescreen {
+    position: relative;
+}
+
+/*h3 {
+    margin-top: 10px;
+}*/
