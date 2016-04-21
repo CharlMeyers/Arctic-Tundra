@@ -12,10 +12,12 @@ body {
     height: 100vh;
     position: relative;
     box-shadow: 10px 0px 40px #404040;
+    overflow-x: hidden;
+    z-index: 2;
 }
 
 html {
-    /*background-color: #373834;*/
+    background-color: #373834;
     /*height: 100%;*/
 }
 
@@ -90,7 +92,7 @@ html {
 #sidescreen {
     /*background-color: #fcc92c;*/
     color: #373834;
-    z-index: -1;
+    z-index: 1;
     top: 60px;
     position: absolute;
     text-align: right;
@@ -111,6 +113,16 @@ html {
     position: relative;
 }
 
-/*h3 {
-    margin-top: 10px;
-}*/
+a {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}

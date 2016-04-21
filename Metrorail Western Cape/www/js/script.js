@@ -9,5 +9,5 @@ $(document).ready(function() {
 			$(this).data("slide", true);
 		}
 		//alert("click");
-	});
+	});	
 });
