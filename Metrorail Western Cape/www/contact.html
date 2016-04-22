@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Time tables</title>
+		<title>Contact Us</title>
 		<meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="telephone=yes" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
@@ -13,19 +13,6 @@
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.3.5/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script type="text/javascript" src="js/getLocation.js"></script>
-        <style type="text/css">
-            #body {
-                display: flex;
-                flex-direction: column;
-            }
-
-            #map {
-                width: 100%;
-                flex-grow: 1;
-            }
-        </style>
 	</head>
 	<body>
 		<div id="header">
@@ -43,8 +30,29 @@
             </nav>  
         </div>
         <div id="body">
-        	<h1>find station</h1>
-        	<div id="map"></div>
+        	<h1>contact us</h1>
+			<div>			
+				<p>
+                    <h3>Postal Addresses</h3>
+                    <h4><b>Regional Head Office</b></h4>
+                    PO Box 5446, Cape town, 8000
+                    <h4><b>National Office</b></h4>
+                    Private Bag X101, Braamfontein, 2017
+                    <h4><b>Complaints</b></h4>
+                    <b>Email:</b> <a href="mailto:transport.info@capetown.gov.za" class="link">transport.info@capetown.gov.za</a><br />
+                    <b>Website:</b> <a href="http://www.capetown.gov.za/transportinfo" target="_blank" class="link">www.capetown.gov.za/transportinfo</a>
+                    <br />
+                    <h3>Important Numbers</h3>
+                    <h4><b>Metrorail Lost Goods</b></h4>
+                    <a href="tel:0214492144" class="link">021 449 2144</a>
+                    <h4><b>Transport Information Centre</b></h4>
+                    <a href="tel:0800656463" class="link">0800 65 64 63</a>
+                    <h4><b>Metrorail Corporate Security</b></h4>
+                    <a href="tel:0800210081" class="link">0800 21 00 81</a>
+                    <h4><b>SAPS Crime Stop</b></h4>
+                    <a href="tel:0860010111" class="link">0860 01 01 11</a>
+                </p>
+			</div>
         </div>
         <div id="sidescreen">
             <div class="option">
@@ -66,6 +74,6 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script>		
+        </script>			
 	</body>
 </html>

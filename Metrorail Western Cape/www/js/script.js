@@ -10,4 +10,9 @@ $(document).ready(function() {
 		}
 		//alert("click");
 	});	
+
+	// $(".btn").click(function() {
+ //    	$(this).blur();
+	// 	$(this).focusout();
+ //    });
 });
