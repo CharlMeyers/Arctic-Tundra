@@ -15,4 +15,9 @@ $(document).ready(function() {
 		if($("#from").val() != null && $("#to").val() != null)
 			$("#price").html("Price: R7.50");
 	});
+
+	$(".timetable").change(function() {
+		if($("#from").val() != null && $("#to").val() != null)
+			$("#showResult").show();
+	});
 });

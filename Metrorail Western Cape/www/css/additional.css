@@ -49,6 +49,9 @@ h1 {
 	position: relative;
 }
 
+/*#showResult {
+	position: relative;
+}*/
 /*Dropdowns focus overriding*/
 #area:focus {
 	box-shadow: 0px 0px 5px 1px #fcc92c;

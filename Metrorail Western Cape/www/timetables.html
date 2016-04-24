@@ -13,6 +13,14 @@
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.3.5/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript">
+            // $(document).ready(function() {                                
+            //     var containerHeight = ($(window).height() - $("#resContainer").offset().top) / 2;
+            //     var resPos = containerHeight - (($("#showResult").height()) / 2);
+
+            //     $("#showResult").css("top", resPos);                            
+            // });
+        </script>
 	</head>
 	<body>
 		<div id="header">
@@ -32,19 +40,36 @@
         <div id="body">
         	<h1>time tables</h1>
 			<div class="container-fluid">			
-				<div class='dropdown'>		<!-- Sit paar van die regte data in -->							
-					<select class='form-control' id='area' name='area'>
-						<option disabled selected>Choose Area</option>
-						<option value='F'>Hatfield</option>
-						<option value='M'>Brooklyn</option>
-					</select>
-					<select class='form-control' id='day' name='day'>
-						<option disabled selected>Choose Day</option>
-						<option value='F'>Hatfield</option>
-						<option value='M'>Brooklyn</option>
-					</select>									
-				</div>
+				<div class='dropdown'>		<!-- Sit paar van die regte data in -->						
+                    <select class='form-control timetable' id='metro' name='metro'>
+                        <option disabled selected>Choose Day</option>
+                        <option value='monFri'>Monday-Friday</option>
+                        <option value='sat'>Saturday</option>
+                        <option value='sunPub'>Sonday/Public Holiday</option>
+                    </select>                                               
+                    <label for="from">from</label>                      
+                    <select class='form-control timetable' id='from' name='from'>
+                        <option disabled selected></option>
+                        <option value='degrendel'>De Grendel</option>
+                        <option value="falsebay">False Bay</option>
+                        <option value="klipheuwel">Klipheuwel</option>
+                        <option value="maitland">Maitland</option>
+                        <option value='nonkqubela'>Nonkqubela</option>
+                    </select>
+                    <label for="to">to</label>
+                    <select class='form-control timetable' id='to' name='to'>
+                        <option disabled selected></option>
+                        <option value='degrendel'>De Grendel</option>
+                        <option value="falsebay">False Bay</option>
+                        <option value="klipheuwel">Klipheuwel</option>
+                        <option value="maitland">Maitland</option>
+                        <option value='nonkqubela'>Nonkqubela</option>
+                    </select>									
+				</div>                
 			</div>
+            <div id="resContainer">
+                <h1 id="showResult" hidden><a href="timetable_result.html"><u>Show Timetable</u></a></h1>
+            </div>
         </div>
         <div id="sidescreen">
             <div class="option">
