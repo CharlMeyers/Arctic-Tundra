@@ -11,8 +11,8 @@ $(document).ready(function() {
 		//alert("click");
 	});	
 
-	// $(".btn").click(function() {
- //    	$(this).blur();
-	// 	$(this).focusout();
- //    });
+	$(".priceSelect").change(function() {
+		if($("#from").val() != null && $("#to").val() != null)
+			$("#price").html("Price: R7.50");
+	});
 });

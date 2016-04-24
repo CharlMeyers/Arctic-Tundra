@@ -13,6 +13,16 @@
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.3.5/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {                
+                $(".priceSelect").change(function() {
+                    var containerHeight = ($(window).height() - $("#priceContainer").offset().top) / 2;
+                    var pricePos = containerHeight - (($("#price").height()) / 2);
+
+                    $("#price").css("top", pricePos);
+                });              
+            });
+        </script>
 	</head>
 	<body>
 		<div id="header">
@@ -29,34 +39,36 @@
                 </div>
             </nav>  
         </div>
-        <div id="body">
-        	<h1>ticket prices</h1>
-			<div class="container-fluid">			
-				<div class='dropdown'>		<!-- Sit paar van die regte data in -->							
-					<select class='form-control' id='type' name='type'>
-						<!-- <option disabled selected>Choose Area</option> -->
-						<option value='F'>Single</option>
-						<option value='M'>Multi</option>
-					</select>
-					<select class='form-control' id='metro' name='metro'>
-						<!-- <option disabled selected>Choose Day</option> -->
-						<option value='F'>Metro</option>
-						<option value='M'>Other</option>
-					</select>												
-					<label for="from">from</label>						
-					<select class='form-control' id='from' name='from'>
-						<option disabled selected></option>
-						<option value='F'>11:30</option>
-						<option value='M'>13:30</option>
-					</select>
-					<label for="to">to</label>
-					<select class='form-control' id='to' name='fo'>
-						<option disabled selected></option>
-						<option value='F'>14:30</option>
-						<option value='M'>15:30</option>
-					</select>									
-				</div>
-			</div>
+        <div id="body" class="container-fluid">
+            <div class="mainBody">
+                <h1>ticket prices</h1>      
+                <div class='dropdown'>      <!-- Sit paar van die regte data in -->                         
+                    <select class='form-control priceSelect' id='type' name='type'>
+                        <!-- <option disabled selected>Choose Area</option> -->
+                        <option value='single'>Single</option>
+                        <option value='weekly'>Weekly</option>
+                        <option value='monthly'>Monthly</option>
+                    </select>
+                    <select class='form-control priceSelect' id='metro' name='metro'>
+                        <!-- <option disabled selected>Choose Day</option> -->
+                        <option value='metro'>Metro</option>
+                        <option value='metro+'>Metro Plus</option>
+                    </select>                                               
+                    <label for="from">from</label>                      
+                    <select class='form-control priceSelect' id='from' name='from'>
+                        <option disabled selected></option>
+                        <option value='woodstock'>Woodstock</option>
+                        <option value='capetown'>Cape Town</option>
+                    </select>
+                    <label for="to">to</label>
+                    <select class='form-control priceSelect' id='to' name='fo'>
+                        <option disabled selected></option>
+                        <option value='woodstock'>Woodstock</option>
+                        <option value='captown'>Cape Town</option>
+                    </select>                                   
+                </div>
+            </div>        			
+            <div id="priceContainer"><h1 id="price"></h1></div>
         </div>
         <div id="sidescreen">
             <div class="option">

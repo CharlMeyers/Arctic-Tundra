@@ -36,9 +36,9 @@ html {
     height: 60px;
 }
 
-#mainGrid {
+.mainGrid {
     background-color: #333430;
-    height: 100%;
+    /*height: 100%;*/
     margin: 10px;
     box-shadow: 0 0 5px 5px #262626;
     text-align: center;
